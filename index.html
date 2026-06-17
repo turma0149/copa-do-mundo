@@ -35,13 +35,31 @@
             a Copa de 2026. 
         </p>
 
-       
-
-
-
-
+       <button onclick="trocarTema()"> 
+            Trocar Tema 
+       </button>
     </div>
 
+    <script>
+
+        let temaAtual = "stylea";
+
+        function trocarTema() {
+            const link = document.getElementById("tema");
+
+            if(temaAtual === "stylea"){
+                link.href="./css/styleb.css"
+                temaAtual="styleb"
+            } else {
+                link.href = "./css/stylea.css"
+                temaAtual = "stylea"
+            }
+
+        }
+
+
+
+    </script>
 </body>
 
 </html>
